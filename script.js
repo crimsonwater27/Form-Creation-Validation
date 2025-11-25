@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             messages.push('Password must be at least 6 characters long.');
         }
 
-        feedbackdiv.style.display = 'block';
+        feedbackDiv.style.display = 'block';
         if (isValid) {
             feedback.textContent = 'Registration successful';
             feedback.style.color = '#dc3545';
