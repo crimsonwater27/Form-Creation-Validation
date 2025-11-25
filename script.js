@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', fuction () {
     const form = document.getElementById('registration-form');
     const feedback = document.getElementById('form-feedback');
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', fuction (event) {
         event.preventDefault();
 
         const username = document.getElementById('username').value.trim();
-        const email = document.getElementById('email').value.trim
+        const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value.trim();
         const confirmPassword = document.getElementById('confirm-password').value.trim();
 
