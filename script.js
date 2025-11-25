@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         feedbackdiv.style.display = 'block';
         if (isValid) {
-            feedback.textContent = 'Form submitted successfully!';
+            feedback.textContent = 'Registration successful';
             feedback.style.color = 'green';
             form.reset();
         } else {
             feedbackDiv.innerHTML = messages.join('<br>');
-            feedback.style.color = 'blue';
+            feedback.style.color = 'green';
         }
     });
 });
