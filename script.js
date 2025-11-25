@@ -10,26 +10,26 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = document.getElementById('password').value.trim();
         const confirmPassword = document.getElementById('confirm-password').value.trim();
 
-        let isvalid = true;
+        let isValid = true;
         const messages = [];
 
         if (username.length < 3) {
-            isvalid = false;
+            isValid = false;
             messages.push('Username must be at least 3 characters long.');
         }
 
         if (!email.includes('@') || !email.includes('.')) {
-            isvalid = false;
+            isValid = false;
             messages.push('Please enter a valid email address.');
         }
 
         if (password.length < 6) {
-            isvalid = false;
+            isValid = false;
             messages.push('Password must be at least 6 characters long.');
         }
 
         feedbackdiv.style.display = 'block';
-        if (isvalid) {
+        if (isValid) {
             feedback.textContent = 'Form submitted successfully!';
             feedback.style.color = 'green';
             form.reset();
