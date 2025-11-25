@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
         feedbackdiv.style.display = 'block';
         if (isValid) {
             feedback.textContent = 'Registration successful';
-            feedback.style.color = 'green';
+            feedback.style.color = '#dc3545';
             form.reset();
         } else {
             feedbackDiv.innerHTML = messages.join('<br>');
-            feedback.style.color = 'green';
+            feedback.style.color = '#dc3545';
         }
     });
 });
