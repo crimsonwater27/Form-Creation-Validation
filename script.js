@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             messages.push('Please enter a valid email address.');
         }
 
-        if (password.length < 6) {
+        if (password.length < 8) {
             isValid = false;
             messages.push('Password must be at least 6 characters long.');
         }
