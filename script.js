@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             form.reset();
         } else {
             feedbackDiv.innerHTML = messages.join('<br>');
-            feedback.style.color = '#dc3545';
+            feedbackDiv.style.color = '#dc3545';
         }
     });
 });
